@@ -1,0 +1,93 @@
+
+{
+    "name": "Minimal Node.js Workspace",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {},
+      "ghcr.io/devcontainers-extra/features/jshint:2": {},
+      "ghcr.io/devcontainers/features/git:1": {},
+      "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          // Hide UI Elements for Minimalism
+          "workbench.editor.decorations.badges": false,
+          "workbench.editor.highlightModifiedTabs": false,
+          "workbench.startupEditor": "none",
+          "workbench.activityBar.visible": false, // Hide activity bar
+          "workbench.statusBar.visible": false, // Hide status bar
+          "workbench.sideBar.location": "right",
+          "workbench.sideBar.visible": false, // Hide side bar
+          "explorer.autoReveal": false,
+          "explorer.compactFolders": false,
+          "explorer.openEditors.visible": 1, // Hide open editors
+          "editor.scrollbar.verticalScrollbarSize": 1,
+          "editor.scrollbar.horizontalScrollbarSize": 1,
+          "window.menuBarVisibility": "compact",
+          "window.zoomLevel": 1,
+          "window.titleBarStyle": "custom",
+          "editor.minimap.enabled": false, // Hide minimap
+          "editor.renderWhitespace": "boundary",
+          "editor.renderLineHighlight": "none",
+          "breadcrumbs.enabled": false, // Hide breadcrumbs
+          "editor.fontFamily": "'Fira Code', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+          "editor.fontLigatures": "'ss01', 'ss02', 'calt', 'dlig'",
+          "editor.fontSize": 16,
+          "editor.lineHeight": 28,
+          "editor.smoothScrolling": true,
+          "editor.scrollBeyondLastLine": true,
+          "editor.tokenColorCustomizations": {
+            "textMateRules": [
+              {
+                "scope": ["comment", "keyword", "variable.language"],
+                "settings": { "fontStyle": "italic" }
+              }
+            ]
+          },
+  
+          // Formatting & Linting
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.cursorBlinking": "expand",
+          "editor.cursorSmoothCaretAnimation": "on",
+          "files.trimTrailingWhitespace": true,
+          "files.insertFinalNewline": true,
+          "files.autoSave": "onWindowChange", // Save on window change instead of focus change
+          "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+          "[json]": {
+            "editor.defaultFormatter": "vscode.json-language-features"
+          },
+  
+          // Terminal Customizations
+          "terminal.integrated.fontSize": 14,
+          "terminal.integrated.lineHeight": 1.2,
+          "terminal.integrated.cursorStyle": "line",
+          "terminal.integrated.fontFamily": "'Fira Code', monospace",
+  
+          // Visual Enhancements
+          "editor.lineNumbers": "off", // No line numbers
+          "workbench.editor.showTabs": "none", // Hide tabs
+  
+          // Word Wrap
+          "editor.wordWrap": "on", // Enable word wrap
+  
+          // Theme
+          "workbench.colorTheme": "Catppuccin Mocha",
+          "workbench.iconTheme": "fira-code-material-icon-theme"
+        },
+        "extensions": [
+          "Catppuccin.catppuccin-vsc",
+          "aleleba.fira-code-material-icon-theme",
+          "esbenp.prettier-vscode",
+          "xabikos.JavaScriptSnippets",
+          "miguelsolorio.fluent-icons"
+        ]
+      }
+    },
+    "postCreateCommand": "npm install",
+    "forwardPorts": [],
+    "remoteUser": "node"
+  }

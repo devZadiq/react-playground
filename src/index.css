@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+/* === Modern Sans Pair === */
+/* Montserrat (Heading) + Roboto (Body) */
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* === Elegant Sans Serif + Sans Pair === */
+/* Raleway (Heading) + Lato (Body) */
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+input {
+  @apply w-full px-4 shadow-sm focus:shadow-md py-2 border border-slate-300 rounded-lg focus:outline-none  my-2;
+}
+.card {
+  @apply bg-white shadow-md rounded-lg p-4;
+}
+
+.heading {
+  @apply text-2xl font-bold text-gray-800 mb-4;
+}
+
+.button {
+  @apply text-white font-semibold py-2 px-4 rounded;
+}
+
+.secondCard {
+  @apply bg-gray-100 border border-gray-200 rounded-lg p-4;
+}
+
+.body {
+  @apply text-base text-gray-700;
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
