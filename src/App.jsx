@@ -1,9 +1,11 @@
-import CounterApp from "./projects/CounterApp";
+import ToDoApp from "./projects/ToDoApp";
 
 const App = () => {
   return (
-    <div className="py-6 px-4 h-min-svh max-w-[1400px] body font-lato">
-      <CounterApp />
+    <div className="bg-gray-950">
+      <div className="py-6 px-4 h-screen h-min-[100dvh] max-w-[450px] mx-auto bg-gray-950 text-slate-50 font-lato">
+        <ToDoApp />
+      </div>
     </div>
   );
 };
