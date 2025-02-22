@@ -1,4 +1,4 @@
-import PDrillA from "../components/PDrillA";
+import PDrillA from "../components/PropDrill/PDrillA";
 
 /*
   Prop Drilling Explanation:
